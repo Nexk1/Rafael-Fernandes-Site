@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color:lightblue;
+}
+
+
+.cabecalho{
+    background-color: #f0d59c;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    /*
+    border: 2px solid black;
+    border-radius: 5px;*/
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li a:hover {
+    background-color: #ebc26c;
+}
+
+.iframes {
+    text-align: center;
+    width: 100%;
+    
+}
+
+p {
+    color: white;
+    size: 100%;
+}
+
+.butao {
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.butao a:hover{
+    color: lightgray;
+}
+
+div {
+    font-size: 150%;
+}
+.paginas {
+    float: right;
+    background-color: #ebc26c;
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 16px;
+    margin: 1px;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.emotes {
+    size: 150%;
+    color:white;
+    text-align: center;
+}
+
+.Redes {
+    float: right;
+    color: white;
+    size: 200%;
+    text-decoration: none;
+    
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    float: block;
+    text-align: center;
+    margin: 7;
+    padding: 0;
+}
+/* tema */
+body.dark{
+    background-color: #232c35;
+}
+
+body.dark header {
+    background-color: #6a7179;
+}
+
+body.dark header .paginas{
+    background-color: #474b50;
+}
+
+body.dark header li a:hover{
+    background-color: #474b50;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(23px);
+}
+
+.fa-moon{
+    font-size: 15px;
+    color: #e6e6e6;
+}
+
+.fa-sun{
+    font-size: 15px;
+    color:#f39c12;
+}   
+
+.darkmode {
+    float: right;
+    size: 200%;
+    text-decoration: none;
+}
+
